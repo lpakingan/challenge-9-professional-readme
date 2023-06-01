@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -9,7 +10,10 @@ const questions = [
     'What are the installation instructions?',
     'How do you use your project?',
     'Who are the contributors of the project?',
-    'How do you test your project?'
+    'How do you test your project?',
+    'Pick the license for your project:',
+    'What is your GitHub username?',
+    'What is your email address?'
 ];
 
 // TODO: Create a function to write README file
@@ -49,6 +53,22 @@ function init() {
                 type: 'input',
                 name: 'test',
                 message: questions[5]
+            },
+            {
+                type: 'checkbox',
+                name: 'license',
+                message: questions[6],
+                choices: ['MIT', 'GPL', 'Creative Commons', 'Other', 'None']
+            },
+            {
+                type: 'input',
+                name: 'username',
+                message: questions[7],
+            },
+            {                
+                type: 'input',
+                name: 'email',
+                message: questions[8],
             }
         ])
     }
