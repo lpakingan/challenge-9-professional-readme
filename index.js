@@ -52,6 +52,7 @@ function init() {
             }
         ])
     }
+    return prompts();
 }
 
 // Function call to initialize app
