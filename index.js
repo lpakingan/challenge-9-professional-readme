@@ -60,7 +60,7 @@ function init() {
             type: 'checkbox',
             name: 'license',
             message: questions[6],
-            choices: ['MIT', 'GPL', 'Creative Commons', 'Other', 'None']
+            choices: ['MIT', 'GPL', 'Creative Commons', 'Apache', 'None']
         },
         {
             type: 'input',
