@@ -37,9 +37,9 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   let projectLicense = license.license
   if (!projectLicense || projectLicense == '') {
-    licenseSection = ''
+    licenseSection = 'No license was used for this project.'
   } else {
-    licenseSection = '## License'
+    licenseSection = 'Please refer to the license details below:'
   }
 }
 
@@ -54,23 +54,32 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
-  ## Installation
+  ## Table of Contents
+  [Installation](#installation)
+  [Usage](#usage)
+  [Contributors](#contributors)
+  [Testing](#testing)
+  [License](#license)
+  [Questions](#questions)
+
+  ## Installation <a name ='installation'></a>
   ${data.installation}
 
-  ## Usage
+  ## Usage <a name ='usage'></a>
   ${data.usage}
 
-  ## Contributors
+  ## Contributors <a name ='contributors'></a>
   ${data.contributors}
 
-  ## Testing 
+  ## Testing <a name ='testing'></a>
   ${data.test}
 
+  ## License <a name ='license'></a>
   ${licenseSection}
   ${projectBadge}
   ${licenseLink}
 
-  ## Questions
+  ## Questions <a name ='questions'></a>
   If you have any questions regarding this application, please reach out to ${data.username} on Github or at ${data.email}.
 `;
 }
