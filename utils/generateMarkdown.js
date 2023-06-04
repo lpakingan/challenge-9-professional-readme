@@ -69,8 +69,8 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License <a name ='license'></a>
-  ${licenseSection}\
   ${projectBadge}\
+  ${licenseSection}\
   ${licenseLink}
 
   ## Contributors <a name ='contributors'></a>
