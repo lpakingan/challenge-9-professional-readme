@@ -20,13 +20,13 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   let projectLicense = license.license
   if (projectLicense == 'MIT') {
-    licenseLink = 'You can find the licensing details at [this link](https://opensource.org/license/mit/)';
+    licenseLink = 'You can find the licensing details at [this link](https://opensource.org/license/mit/).';
   } else if (projectLicense == 'GPL') {
-    licenseLink = 'You can find the licensing details at [this link](https://www.gnu.org/licenses/gpl-3.0.en.html)';
+    licenseLink = 'You can find the licensing details at [this link](https://www.gnu.org/licenses/gpl-3.0.en.html).';
   } else if (projectLicense == 'Creative Commons') {
-    licenseLink = 'You can find the licensing details at [this link](https://creativecommons.org/licenses/)';
+    licenseLink = 'You can find the licensing details at [this link](https://creativecommons.org/licenses/).';
   } else if (projectLicense == 'Apache') {
-    licenseLink = 'You can find the licensing details at [this link](https://www.apache.org/licenses/LICENSE-2.0)';
+    licenseLink = 'You can find the licensing details at [this link](https://www.apache.org/licenses/LICENSE-2.0).';
   } else {
     licenseLink = '';
   }
@@ -55,12 +55,12 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contributors](#contributors)
-  [Testing](#testing)
-  [Questions](#questions)
+  [Installation](#installation)\
+  [Usage](#usage)\
+  [License](#license)\
+  [Contributors](#contributors)\
+  [Testing](#testing)\
+  [Questions](#questions)\
 
   ## Installation <a name ='installation'></a>
   ${data.installation}
@@ -69,9 +69,9 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License <a name ='license'></a>
-  ${licenseSection}
-  ${projectBadge}
-  ${licenseLink}
+  ${licenseSection}\
+  ${projectBadge}\
+  ${licenseLink}\
 
   ## Contributors <a name ='contributors'></a>
   ${data.contributors}

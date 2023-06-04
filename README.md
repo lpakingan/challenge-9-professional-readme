@@ -26,7 +26,9 @@
   I am the sole contributor to this project.
 
   ## Testing <a name ='testing'></a>
-  You can enter any inputs you would like and see them included into the README file.
+  You can enter any inputs you would like and see them included into the README file. This README (excluding this sentence) was created from the command line as a result of the demo (shown below):
+
+  
 
   ## Questions <a name ='questions'></a>
   If you have any questions regarding this application, please reach out to [lpakingan](https://github.com/lpakingan) on Github or at lpak98@gmail.com.
