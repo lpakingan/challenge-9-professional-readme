@@ -60,7 +60,7 @@ function generateMarkdown(data) {
   [License](#license)\
   [Contributors](#contributors)\
   [Testing](#testing)\
-  [Questions](#questions)\
+  [Questions](#questions)
 
   ## Installation <a name ='installation'></a>
   ${data.installation}
@@ -71,7 +71,7 @@ function generateMarkdown(data) {
   ## License <a name ='license'></a>
   ${licenseSection}\
   ${projectBadge}\
-  ${licenseLink}\
+  ${licenseLink}
 
   ## Contributors <a name ='contributors'></a>
   ${data.contributors}
