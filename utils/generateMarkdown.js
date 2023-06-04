@@ -39,7 +39,7 @@ function renderLicenseSection(license) {
   if (!projectLicense || projectLicense == '') {
     licenseSection = 'No license was used for this project.'
   } else {
-    licenseSection = 'Please refer to the license details below:'
+    licenseSection = `This project uses the ${projectLicense} license.`
   }
 }
 
@@ -57,9 +57,9 @@ function generateMarkdown(data) {
   ## Table of Contents
   [Installation](#installation)
   [Usage](#usage)
+  [License](#license)
   [Contributors](#contributors)
   [Testing](#testing)
-  [License](#license)
   [Questions](#questions)
 
   ## Installation <a name ='installation'></a>
@@ -68,19 +68,19 @@ function generateMarkdown(data) {
   ## Usage <a name ='usage'></a>
   ${data.usage}
 
+  ## License <a name ='license'></a>
+  ${licenseSection}
+  ${projectBadge}
+  ${licenseLink}
+
   ## Contributors <a name ='contributors'></a>
   ${data.contributors}
 
   ## Testing <a name ='testing'></a>
   ${data.test}
 
-  ## License <a name ='license'></a>
-  ${licenseSection}
-  ${projectBadge}
-  ${licenseLink}
-
   ## Questions <a name ='questions'></a>
-  If you have any questions regarding this application, please reach out to ${data.username} on Github or at ${data.email}.
+  If you have any questions regarding this application, please reach out to [${data.username}](https://github.com/${data.username}) on Github or at ${data.email}.
 `;
 }
 

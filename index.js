@@ -57,7 +57,7 @@ function init() {
             message: questions[5]
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: questions[6],
             choices: ['MIT', 'GPL', 'Creative Commons', 'Apache', 'None']
