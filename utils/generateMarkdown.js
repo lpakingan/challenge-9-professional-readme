@@ -55,11 +55,11 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  [Installation](#installation)\
-  [Usage](#usage)\
-  [License](#license)\
-  [Contributors](#contributors)\
-  [Testing](#testing)\
+  [Installation](#installation)  
+  [Usage](#usage)  
+  [License](#license)  
+  [Contributors](#contributors)  
+  [Testing](#testing)  
   [Questions](#questions)
 
   ## Installation <a name ='installation'></a>
@@ -69,8 +69,8 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License <a name ='license'></a>
-  ${projectBadge}\
-  ${licenseSection}\
+  ${projectBadge}  
+  ${licenseSection}  
   ${licenseLink}
 
   ## Contributors <a name ='contributors'></a>
